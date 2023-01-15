@@ -2,7 +2,7 @@ function displayResult(){
 let sex;
 if (document.getElementById("male").checked){
     sex = 0;
-}else if (document.getElementById(".female").checked){
+}else if (document.getElementById("female").checked){
     sex = 1;
 }
 
