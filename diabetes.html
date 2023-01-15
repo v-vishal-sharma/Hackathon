@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="/Main Page/calculators/diabetes/diabetes.css"
+    />
+    <script src="/Main Page/calculators/diabetes/diabetes.js"></script>
+  </head>
+  <body>
+    <section class="everything"></section>
+    <section id="header">
+      <div class="headlogo">
+        <a href="#"><img src="/img/656_R0lVIEpFTiAzMzMtOTU.jpg" alt="" /></a>
+        <a href="#" id="clothify">Healthify</a>
+      </div>
+      <div>
+        <ul id="navbar">
+          <li class="hover-underline-animation">
+            <a href="/Main Page/Main.html">Home</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="cover">
+        <div class="content">
+          <h4 class="calc">Diabetes Calculator</h4>
+          <form>
+            <div class="group">
+              <label>Sex:-</label>
+              <input id="male" type="radio" name="gender" />Male
+              <input id="female" type="radio" name="gender" />Female
+            </div>
+            <div class="group">
+              <label>Height:-</label>
+              <input type="number" id="height" placeholder="Centimeters" />
+            </div>
+            <div class="group">
+              <label>Actual Body Weight:-</label>
+              <input type="number" id="weight" placeholder="Kg" />
+            </div>
+            <div class="group">
+              <label>Age:-</label>
+              <input
+                type="number"
+                id="age"
+                placeholder="Your Age"
+                class="age"
+              />
+            </div>
+            <div class="group">
+              <label>Family History:-</label>
+              <input 
+                id="FamilyHistory"
+                class="FamilyHistory"
+                placeholder="1 for Yes, 0 for No"
+              />
+            </div>
+            <div class="group">
+              <label>Ethnicity:-</label>
+              <input 
+                id="Ethnicity"
+                class="Ethnicity"
+                placeholder="1 for Latin American, 0 for Non-hispanic White"
+              />
+            </div>
+            <div class="group">
+              <label>Fasting Glucose:-</label>
+              <input
+                id="fastingGlucose"
+                class="fastingGlucose"
+                placeholder="mg/dL"
+              />
+            </div>
+            <div class="group">
+              <label>Systolic Blood Pressure:-</label>
+              <input 
+                id="SBP"
+                class="SBP"
+                placeholder="mmHg"
+              />
+            </div>
+            <div class="group">
+              <label>HDL Cholesterol:-</label>
+              <input 
+                id="HDL"
+                class="HDL"
+                placeholder="mg/dL"
+              />
+            </div>
+          </form>
+        </div>
+        <button class="submit" onclick="displayResult()">Calculate</button>
+        <div class="group result"></div>
+      </div>
+    </section>
+    <section class="info">
+      <h4>What is adjusted body weight?</h4>
+      <p>
+        Adjusted body weight (sometimes abbreviated to AjBW) is a measure used
+        for calculating a person's nutritional needs, popular among dietitians
+        when they are tasked with setting up a weight loss program. It is
+        especially useful when the patient is overweight or obese. As adipose
+        tissue is less metabolically active than lean tissue, using actual body
+        weight for calculating one's energy requirements might result in some
+        overestimations for people above their healthy BMI. Hence, it's often
+        recommended to use AjBW instead.
+      </p>
+      <h4>How to use the adjusted body weight calculator?</h4>
+      <p>
+        To use our calculator, follow these instructions: <br />
+
+        1. Provide the calculator with your sex. <br />
+        2.Input your height. <br />
+        3.Input your actual body weight. <br />
+        4.The adjusted body weight calculator will use your sex, height and
+        weight to figure out your ideal weight, which is a component of the
+        adjusted body weight formula. Please note that there are several
+        accepted equations used for calculating ideal weight, based on slightly
+        different scientific theories. However, the differences in results are
+        practically negligible, so you shouldn't worry about them. You can read
+        more about these theories at our ideal weight calculator. In this
+        calculator, we use the Robinson formula. <br />
+        5.The calculator will use the values you provided to calculate your AjBW
+        and display it to you in the bottom-most field.
+      </p>
+      <h4>Limitations of the adjusted body weight calculator</h4>
+      <p>
+        It's essential to keep in mind that the adjusted body weight calculator
+        is not appropriate in all situations. One should only use it when their
+        excess weight comes from adipose tissue.
+      </p>
+    </section>
+    <script src="diabetes.js"></script>
+  </body>
+</html>
